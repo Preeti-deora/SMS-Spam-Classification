@@ -30,10 +30,10 @@ SMS-Spam-Classification/
 │── reports/            # Evaluation results
 │── scripts/
 │   │── preprocess.py   # Data cleaning and preprocessing
-│   │── feature_extract.py  # Feature extraction (TF-IDF, CountVectorizer)
+│   │── feature_extraction.py  # Feature extraction (TF-IDF, CountVectorizer)
 │   │── train_models.py # Train multiple models
-│   │── save_best_model.py  # Save the best-performing model
-│   │── gui.py          # GUI for message classification
+│   │── select_best_model.py  # Save the best-performing model
+│   │── gui_spam_classifier.py          # GUI for message classification
 │── README.md
 │── requirements.txt    # Python dependencies
 ```
@@ -51,7 +51,7 @@ python scripts/preprocess.py
 ### 2. Feature Extraction
 Generate feature vectors using CountVectorizer and TF-IDF:
 ```bash
-python scripts/extract_features.py
+python scripts/feature_extraction.py
 ```
 
 ### 3. Train Models
@@ -63,7 +63,7 @@ python scripts/train_models.py
 ### 4. Save the Best Model
 Save the best-performing model for future use:
 ```bash
-python scripts/save_best_model.py
+python scripts/select_best_model.py
 ```
 
 ### 5. Run GUI
